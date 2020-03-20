@@ -76,3 +76,20 @@ product = proxy.call(session, 'catalog_product.list', args)
 pprint.pprint(product)
 ```
 
+# Operadores SQL
+```
+from => After the given timestamp
+to => Before the given timestamp
+like => Like the given text (SQL syntax, using % for wildcards)
+nlike => Not like the given text (SQL syntax)
+eq => Equal to the given value
+neq => Not equal to the given value
+in => In the given array
+nin => Not in the given array
+null => Is null
+notnull => Is not null
+gt => Greater than
+lt => Less than
+gteq => Greater than or equal to
+lteq => Less than or equal to
+```
