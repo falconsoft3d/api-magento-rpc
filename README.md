@@ -95,3 +95,10 @@ lt => Less than
 gteq => Greater than or equal to
 lteq => Less than or equal to
 ```
+
+# SQL
+```
+args =  [{'created_at':[{'key':'created_at','value':{'key':'eq','value':'2020-03-16 18:48:35'}}]}]
+sales = proxy.call(session, 'sales_order.list', args)
+pprint.pprint(sales)
+```
