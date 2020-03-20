@@ -1,3 +1,8 @@
+# RPC MAGENTO
+```
+XML-RPC (Remote Procedure Call) es un protocolo de llamada a procedimiento remoto que usa XML para codificar los datos y HTTP como protocolo de transmisión de mensajes.1
+```
+
 # Lista de Comandos de la API
 ```
 [cart[0m: create, info, license, order, totals
