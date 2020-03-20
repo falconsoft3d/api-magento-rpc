@@ -1,4 +1,4 @@
-# Conectarse Python3
+# Listar totas las ordenes de ventas de Magento
 ```
 import xmlrpc.client
 url = 'http://134.122.75.12:80'
