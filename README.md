@@ -1,11 +1,15 @@
-# Paso a paso para instalar Magento ver. 1.9.3.8 con Docker en Ubuntu 18.04
+# Conectarse Python3
 ```
-https://m.do.co/c/7f5c3af8d6bb
+import xmlrpc.client
+url = 'http://134.122.75.77:80'
+username = 'odoo'
+password = 'x1234567890'
+
+proxy = xmlrpc.client.ServerProxy('{}/api/xmlrpc/'.format(url))
+session = proxy.login('odoo', 'x1234567890')
+
+args =  []
+sales = proxy.call(session, 'sales_order.list', args)
+print(sales)
 ```
 
-# 1 - Actualizamos el Sistema
-```
-sudo su
-apt-get update && apt-get upgrade -y
-apt  install docker.io
-```
